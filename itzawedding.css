@@ -1,0 +1,477 @@
+@font-face {
+ font-family: 'Alice';
+ src: url('font/Alice.otf');
+}
+
+@font-face {
+ font-family: 'Safira';
+ src: url('font/Safira.otf');
+}
+
+.container-fluid {
+    margin-bottom: 50px;
+}
+
+.nav {
+    margin: 0 auto;
+    height: 75px;
+    align-items: center;
+    justify-content: space-around;
+    background: transparent;
+    position: absolute;
+    width: 33%;
+    z-index: 100;
+    left: 0;
+    right: 0;
+}
+
+.nav a {
+    position: relative;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.nav a:hover {
+    text-decoration: none;
+}
+
+.nav a:hover:after {
+    content: '';
+    display: flex;
+    position: absolute;
+    width: 25px;
+    border-bottom: 1px solid #FFF;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding-bottom: 4px;
+}
+
+.container-fluid {
+    padding: 0px;
+}
+
+i.bi.bi-chevron-double-down {
+    color: #FFFFFF;
+    font-size: 45px;
+    position: absolute;
+    bottom: 3vh;
+    cursor: pointer;
+}
+
+.name-and-date .content {
+    width: 100%;
+    color: #FFFFFF;
+    text-align: center;
+    height: 100%;
+    background: #f64a;
+    padding: 5% 0px 5%;
+}
+
+.name-and-date .content > *:not(div) {
+    font-family: 'Safira', Arial;
+    margin: unset;
+}
+
+.name-and-date .content > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* width: 45%; */
+    margin-left: auto;
+    font-family: 'Alice';
+}
+
+.name-and-date .countdown {
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+}
+
+.name-and-date .content .header-text > h1 {
+    font-family: 'Safira';
+    font-size: 40px;
+    line-height: 58px;
+}
+
+.name-and-date .content .header-text > p {
+    font-family: 'Safira';
+    font-size: 20px;
+    line-height: 30px;
+    margin: 26px 0px;
+    position: relative;
+}
+
+.name-and-date .content .header-text > p:after {
+    margin-left: 75%;
+}
+.name-and-date .content .header-text > p:before {
+    margin-left: -275%;
+    text-align: right;
+}
+.name-and-date .content .header-text > p:before, .name-and-date .content .header-text > p:after {
+    content: '\a0';
+    position: absolute;
+    top: 51%;
+    width: 200%;
+    overflow: hidden;
+    background-color: #FFFFFF;
+    height: 2px;
+}
+
+.name-and-date h2:first-of-type {
+    font-size: 39px;
+    margin: 24px 0px;
+    font-family: 'Alice';
+}
+
+.name-and-date h2:nth-of-type(2) {
+    font-size: 32px;
+}
+
+.name-and-date .countdown h3 {
+    margin: unset;
+}
+
+.name-and-date .countdown-vals span {
+    font-size: 20px;
+}
+
+.name-and-date .countdown-vals span:not(:last-of-type) {
+    margin-right: 15px;
+}
+
+.carousel-inner {
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+[class*="carousel-control"]:not([class*="icon"]) {
+    width: 25%;
+}
+
+button.carousel-control-next {
+    justify-content: flex-start;
+}
+
+button.carousel-control-prev {
+    justify-content: flex-end;
+}
+
+.journey-text {
+    width: 55%;
+    margin: 38px auto 0px;
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    align-items: center;
+}
+
+/* .journey-layout .img-container {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+} */
+
+.journey-layout .img-container {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    border-radius: 41px;
+    position: relative;
+    z-index: 10;
+    background: url(images/dunphy-walking.jpg);
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* .journey-layout img {
+    height: auto;
+    width: 55%;
+} */
+
+.journey-layout [class*="journey-section"] {
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.journey-layout [class*="journey-section"]:nth-of-type(even) {
+    flex-direction: row-reverse;
+}
+
+.RSVP-text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 120px;
+    color: #FFFFFF;
+    font-family: 'Safira';
+    letter-spacing: 5px;
+    background: rgba(0,0,0,.2);
+    margin-bottom: 0;
+}
+
+.rsvp-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background: #f64a; */
+}
+
+.rsvp-form > h1 {
+    font-family: 'Safira';
+    font-size: 18px;
+    margin: 60px 0 30px;
+}
+
+.rsvp-form > h3 {
+    font-family: 'Alice';
+    font-size: 16px;
+    margin-bottom: 4vh;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-field input, .form-field select, .form-field textarea {
+    width: 450px;
+    height: 35px;
+}
+
+.form-field textarea {
+  height: 150px;
+}
+
+.form-field label {
+    margin-bottom: 8px;
+}
+
+.form-image {
+    background-image: url('images/dunphy-walking.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 600px;
+}
+
+.form-container {
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.form-container .form-field:nth-of-type(2) {
+    margin: 16px 0px;
+}
+
+.form-field label {
+    margin-bottom: 0px;
+}
+
+/* .form-field.button {
+    width: 100%;
+} */
+
+.form-submission-note {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-submission-note:after {
+    content: 'If your RSVP was not correct, please text Andrew or Christina';
+    width: 250px;
+    text-align: center;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.accordion {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.accordion .accordion-item {
+    border: none;
+}
+
+.accordion .accordion-button {
+    justify-content: center;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.accordion .accordion-button::after{
+  display: none;
+}
+
+.accordion .accordion-button:hover, .accordion .accordion-button:not(.collapsed) {
+    color: gold;
+    background: none;
+    box-shadow: none;
+    border: none;
+}
+
+.accordion h1 {
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 44px;
+    font-family: 'Safira';
+    font-size: 24px;
+    padding-bottom: 14px;
+    margin-bottom: 0px !important;
+}
+
+.accordion-item p {
+    text-align: center;
+}
+
+.falkirk-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.falkirk-container img {
+    width: 50%;
+}
+
+.FAQ h1.section-header {
+    text-underline-offset: 7px;
+    margin-bottom: 60px !important;
+    text-decoration: underline;
+    text-decoration-color: #f64a;
+    text-decoration-line: underline;
+    text-decoration-thickness: 3px;
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 15px 0px; */
+    background-image: url('images/hero-bridge.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;
+    position: relative;
+}
+
+/* div#header:after {
+    content: 'v';
+    font-size: 45px;
+    color: #FFF;
+    position: absolute;
+    bottom: 20px;
+} */
+
+
+#journey {
+    padding: 24px 0px 48px;
+    /* background-color: #FFCCBA; */
+}
+
+#journey h1, .FAQ h1 {
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Safira';
+    margin: 36px 0px;
+}
+
+/* #journey div {
+    padding: 20px 40px 0px;
+    display: flex;
+    justify-content: center;
+} */
+
+/* #journey div span {
+    border-radius: 8px;
+    display: inline-block;
+    min-width: 45%;
+    background: rgba(129,129,129,.2);
+    padding: 2%;
+} */
+
+#rsvp-img {
+    display: flex;
+    background: url(images/rsvp.jpg);
+    height: 80vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -200px;
+    width: auto;
+}
+
+/* #form #test-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+#form .form-image {
+    width: 25%;
+} */
+
+#test-form > div:not(:last-of-type) {
+    margin-bottom: 16px;
+}
+
+#submit-form {
+    border-radius: 25px;
+    width: 200px;
+    height: 35px;
+    border: none;
+    color: #FFF;
+    font-size: 18px;
+    background: #f64a;
+    margin-top: 24px;
+}
+
+#submit-form:active {
+    color: #d68aeb;
+    background: #FFF;
+    border: 2px solid #d68aeb;
+}
+
+#submit-form:hover, #reset-rsvp:hover {
+    box-shadow: 0 3px 7px 1px rgb(0 0 0 / 25%);
+}
+
+#submit-form.inactive-btn {
+    pointer-events: none;
+    background: #4BB543;
+}
+
+#reset-rsvp {
+    position: absolute;
+    bottom: 15px;
+    width: 275px;
+    border-radius: 25px;
+    border: none;
+    height: 35px;
+    background: #C8A2C8;
+    color: #FFF;
+    font-size: 18px;
+    display: none;
+}
+
+#registry {
+    padding: 60px 0px 120px;
+}

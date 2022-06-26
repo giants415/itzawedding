@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Christina & Andrew</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js" integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY=" crossorigin="anonymous"></script> -->
+    <script type="text/javascript" src="./JS/itzawedding.js"></script>
+    <script type="text/javascript" src="./JS/dist/jquery.serialize-object.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link href="./itzawedding.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <ul class="nav nav-pills">
+        <li role="presentation" class="active"><a href="#header">Home</a></li>
+        <li role="presentation"><a href="#journey">Our Journey</a></li>
+        <li role="presentation"><a href="#rsvp-img">RSVP</a></li>
+        <li role="presentation"><a href="#registry">Registry</a></li>
+        <li role="presentation"><a href="#FAQ">FAQ</a></li>
+      </ul>
+      <div id="header" class="center">
+        <i class="bi bi-chevron-double-down"></i>
+      </div>
+      <div class="name-and-date" id="nameAndDate">
+        <div class="content">
+          <div class="header-text">
+            <h1>Christina</h1><p>and</p><h1>Andrew</h1>
+            <h2>August 27 2022</h2>
+            <!-- <h2>San Rafael, CA</h2> -->
+          </div>
+          <div class="countdown">
+            <h3> We're almost there!</h3>
+            <div class="countdown-vals">
+              <span class="days">00</span><span class="hours">00</span><span class="mins">00</span><span class="secs">00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="journey" class="">
+        <h1>Our Journey</h1>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="true">
+            <!-- <div class="carousel-indicators"> -->
+              <!-- <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button> -->
+            <!-- </div> -->
+            <div class="carousel-inner">
+              <div class="carousel-item" data-bs-interval="5000">
+                <img src="./carousel/photo_003.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item active" data-bs-interval="3000">
+                <img src="./carousel/photo_013.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <img src="./carousel/photo_021.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <img src="./carousel/photo_030.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <img src="./carousel/photo_032.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <img src="./carousel/photo_043.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <img src="./carousel/photo_044.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <img src="./carousel/photo_047.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <img src="./carousel/photo_055.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <img src="./carousel/photo_058.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <img src="./carousel/photo_063.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <img src="./carousel/photo_065.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <img src="./carousel/photo_067.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <img src="./carousel/photo_069.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <img src="./carousel/photo_075.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <img src="./carousel/photo_079.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <img src="./carousel/photo_084.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <img src="./carousel/photo_021.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        <p class="journey-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur maximus arcu et porta sodales. Duis feugiat euismod mi, in sollicitudin enim interdum eu. Praesent sit amet felis mattis, volutpat felis id, finibus mi. Nulla euismod neque at lacus efficitur pulvinar. Praesent varius odio id quam euismod commodo. Pellentesque aliquam tristique varius. Curabitur porta ipsum sed erat eleifend laoreet. Vestibulum tincidunt, quam pharetra aliquet finibus, dui lectus efficitur lectus, quis sollicitudin mi ligula eu erat. Nulla facilisi. In porta velit sed nulla tincidunt, sit amet maximus nibh scelerisque. Maecenas eu turpis sapien.
+
+Phasellus eu est cursus, consequat velit ut, ultricies mi. Nulla aliquet, enim ac ullamcorper fringilla, nisi nulla maximus lacus, pharetra porttitor dolor massa sed nisi. Etiam diam purus, pharetra non maximus sit amet, auctor a tellus. In ex diam, viverra quis bibendum ac, commodo id odio. Vivamus sagittis lectus at justo finibus, molestie pulvinar arcu aliquam. Ut in lobortis nibh. Donec et metus odio.
+        </p>
+      </div>
+      <div id="rsvp-img" class="tbd">
+        <h1 class="RSVP-text">RSVP</h1>
+        <!-- <div class="form-image"> -->
+        <!-- </div> -->
+      </div>
+      <div class="rsvp-form">
+        <h1>We're so excited to celebrate with you!</h1>
+        <h3>Kindly respond by July 30, 2022</h3>
+        <form id="test-form">
+          <div class="form-container">
+                    <!-- <p>Please RSVP by July 30th</p> -->
+            <div class="form-field">
+              <!-- <label>Full Name</label> -->
+              <input type="text" name="Name" placeholder="Full Name" required="true" id="name-field"/>
+            </div>
+            <!-- <div>
+              <label>Attending</label>
+              <input type="text" name="Attending" placeholder="Field 2"/>
+            </div> -->
+            <div class="form-field">
+              <!-- <label for="guest-select">Number of Guests</label> -->
+              <select name="NumberOfGuests" id="guest-select" required>
+                <option selected="true" disabled="disabled" value="">Number of Guests</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="0">Unfortunately, we won't make it</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <!-- <label>Message</label> -->
+              <textarea type="text" name="Message" placeholder="Message" required="true" id="message"/></textarea>
+            </div>
+
+            <!-- <div> -->
+              <!-- <label>Test2</label>
+              <input type="text" name="test2" placeholder="Field 2"/>
+            </div> -->
+            <!-- <div>
+              <label>Field 3</label>
+              <input type="text" name="form_field_3" placeholder="Field 3"/>
+            </div>
+            <div>
+              <label>Field 4</label>
+              <input type="text" name="form_field_4" placeholder="Field 4"/>
+            </div> -->
+            <div class="form-field button">
+              <button type="submit" id="submit-form">Submit</button>
+            </div>
+            <!-- <button id="reset-rsvp">Change RSVP</button> -->
+          </div>
+        </form>
+      </div>
+      <div id="registry" class="registry">
+        <!-- <h1>Registry</h1> -->
+        <a class="zola-registry-embed" href="www.zola.com/registry/andrewandchristinaaugust27" data-registry-key="andrewandchristinaaugust27">Our Zola Wedding Registry</a><script>!function(e,t,n){var s,a=e.getElementsByTagName(t)[0];e.getElementById(n)||(s=e.createElement(t),s.id=n,s.async=!0,s.src="https://widget.zola.com/js/widget.js",a.parentNode.insertBefore(s,a))}(document,"script","zola-wjs");</script>
+      </div>
+      <div id="FAQ" class="FAQ">
+        <h1 class="section-header">FAQ</h1>
+        <div class="accordion" id="accordionExample FAQ-accordion">
+          <h1>Your Travel</h1>
+          <div class="accordion-item 1">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                Where is the ceremony and reception?
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div class="falkirk-container">
+                  <img src="./images/falkirk.jpeg" />
+                </div>
+                <p>
+                  The ceremony and reception will take place at<br/>Falkirk Cultural Center<br/>1408 Mission Ave, San Rafael, CA 94901
+                </p>
+                <p>
+                  There will be parking available at Falkirk. There is a slight hill from the parking lot to the venue, so let us know in advance if you need to park closer for accessibility.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item 2">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Where should I stay?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>We have a courtesy hold on 15 rooms at the Embassy Suites in San Rafael.</p>
+                <p>Another good option is the Courtyard in Larkspur.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item 3">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Which Airport should I fly in to?
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>Oakland International Airport (OAK) - 35 minute drive to San Rafael</p>
+                <p>San Francisco International Airport - 55 minute drive to San Rafael</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item 4">
+            <h2 class="accordion-header" id="headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                What is there to do in Marin County (or nearby)?
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p><strong>The Village at Corte Madera</strong> (10 mins from San Rafael) - Outdoor shopping mall and dining</p>
+                <p><strong>Sausalito (16 mins from San Rafael)</strong> - Beautiful views of the bay, restaurants, shopping</p>
+                <p><strong>San Francisco (22 mins from San Rafael)</strong> - Iconic locations include Coit Tower & North Beach, The Castro, Dolores Park & The Mission (get a burrito!), Golden Gate Park & California Academy of Sciences. Popular places you can skip are Fisherman’s Warf & Pier 39.</p>
+                <p><strong>Muir Woods (25 mins from San Rafael)</strong> - Hiking trails. Fun Fact - Muir Woods was a filming location for Star Wars: Return of the Jedi.</p>
+                <p><strong>Marin Headlands (27 mins from San Rafael)</strong> - Hiking and breathtaking views of the Golden Gate Bridge</p>
+                <p><strong>Sonoma (35 mins from San Rafael)</strong> -  Find wine tasting rooms, vineyards, and dining in Sonoma.</p>
+                <p><strong>Point Reyes Station (38 mins from San Rafael)</strong> - Hiking trails and views of Tomales Bay.</p>
+                <p><strong>Napa (38 mins from San Rafael)</strong> -  Find wine tasting rooms, vineyards, and fine dining in Napa.</p>
+              </div>
+            </div>
+          </div>
+          <h1>Your Evening</h1>
+          <div class="accordion-item 5">
+            <h2 class="accordion-header" id="headingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                Should we plan to bring our kids?
+              </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>As much as we love your little ones, this will be an adults-only celebration. We hope this advance notice means you’re able to let your hair down and celebrate with us on the day!</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item 6">
+            <h2 class="accordion-header" id="headingSix">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                What COVID health and safety measures will you be taking during the event?
+              </button>
+            </h2>
+            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>The event will be held completely outdoors. However, we may move inside from 9:00 - 10:00 pm because the venue does not allow amplified music after 9:00 PM.</p>
+                <p>We want our guests to feel comfortable! Please feel free to wear a mask if that is your preference.</p>
+                <p>Please complete a rapid Covid test the morning of the event. This is obvious, but please do not come if you test positive. Let us know if you need help securing a test.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item 7">
+            <h2 class="accordion-header" id="headingSeven">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                What happens after the ceremony?
+              </button>
+            </h2>
+            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>The party ends promptly at 10:00 PM. If you’d like to keep the party going, there are plenty of bars in downtown San Rafael. <a target="_blank" href="https://www.yelp.com/biz/flatiron-san-rafael">Flat Iron</a> and <a target="_blank" href="https://www.yelp.com/biz/california-gold-san-rafael">California Gold</a> are both highly rated.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item 8">
+            <h2 class="accordion-header" id="headingEight">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                What hashtag should I use for sharing photos from of the weekend?
+              </button>
+            </h2>
+            <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>We'll be using the hashtag #itzawedding for all of your Instagram posts.</p>
+              </div>
+            </div>
+          </div>
+          <h1>Your Suitcase</h1>
+          <div class="accordion-item 9">
+            <h2 class="accordion-header" id="headingNine">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                What should I wear? shoes, dress, etc.
+              </button>
+            </h2>
+            <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p><strong>Shoes</strong>: The ceremony and reception will be outdoors, so shoes that can traverse gravel and grass would make your life easier.</p>
+
+                <p><strong>No Sneakers or Moccasins</strong></p>
+
+                <p><strong>Dress</strong>: Cocktail or Semi-Formal Dress Code Bright summery colors are welcome!</p>
+
+                <p><strong>Men</strong>: A classic suit including a tie and dress shoes.</p>
+
+                <p><strong>Women</strong>: Knee, tea, or midi length dresses (please avoid floor-length gowns). Dressy separates or a nice pantsuit work as well.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item 10">
+            <h2 class="accordion-header" id="headingTen">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                What will the weather be like in San Rafael that time of year?
+              </button>
+            </h2>
+            <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>Daily high temperatures are around 75°F, rarely falling below 67°F or exceeding 84°F.</p>
+                <p>Daily low temperatures are around 54°F, rarely falling below 50°F or exceeding 58°F. The highest daily average low temperature is 54°F on August 17.</p>
+                <p>Bring a jacket or sweater for the evening.</p>
+              </div>
+            </div>
+          </div>
+          <h1>Your Bellies</h1>
+          <div class="accordion-item 11">
+            <h2 class="accordion-header" id="headingEleven">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                Will you be serving alcohol at the reception?
+              </button>
+            </h2>
+            <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>Yes, we will be serving beer, wine and signature cocktails, along with an assortment of non-alcoholic beverages. It will be an open bar, so please pace yourself. Let’s keep it classy.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item 12">
+            <h2 class="accordion-header" id="headingTwelve">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                What’s the food situation?
+              </button>
+            </h2>
+            <div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="headingTwelve" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>We’ll be serving snacks during cocktail hour, followed by a delicious dinner, and of course dessert.The entrees will include chicken and steak. We will serve dinner family style, so you will have an opportunity to try everything on the dinner menu!</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item 13">
+            <h2 class="accordion-header" id="headingThirteen">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
+                Will you be accommodating any diet restrictions?
+              </button>
+            </h2>
+            <div id="collapseThirteen" class="accordion-collapse collapse" aria-labelledby="headingThirteen" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>If you have any dietary concerns, please let us know ASAP so we can explore options for you!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" tabindex="-1" role="dialog" id="myModal">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Thank you!</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Your RSVP has been submitted!</p>
+              <p>We can't wait to see you!</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal" id="close-modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
