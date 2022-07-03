@@ -8,6 +8,51 @@
  src: url('font/Safira.otf');
 }
 
+
+@media only screen and (max-width: 768px) {
+  #journey, #header, .nav  {
+    display: none !important;
+  }
+
+  .form-field input, .form-field select, .form-field textarea {
+    max-width: calc(100vw - 40px);
+}
+
+.name-and-date .content .header-text > p:before, .name-and-date .content .header-text > p:after {
+    display: none;
+}
+
+.name-and-date .countdown-vals span:not(:last-of-type) {
+    margin-right: 0px !important;
+}
+
+.name-and-date .countdown-vals span:not(:first-of-type) {
+    display: none;
+}
+.rsvp-form > h1 {
+    text-align: center;
+    line-height: 34px;
+    margin-top: 24px !important;
+}
+
+.accordion {
+    width: calc(100vw - 40px) !important;
+}
+
+.accordion .accordion-button {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 61vw;
+    line-height: 22px;
+}
+
+#rsvp-img {
+    background-position: center !important;
+    height: 45vh !important;
+}
+
+}
+
 .container-fluid {
     margin-bottom: 50px;
 }
