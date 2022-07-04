@@ -14,7 +14,7 @@ $(document).ready(function(){
   var $form = $('form#test-form'),
     url = 'https://script.google.com/macros/s/AKfycbzIEcjvfbgozwDGCDUZqt7Jm2vRkNG7pdUYmTDZI6Afh7D1rWpgE4sDD1-4oiqaGrp9/exec';
 
-  var countDownDate = new Date("Aug 08, 2022 4:00:00").getTime();
+  var countDownDate = new Date("Aug 27, 2022 4:00:00").getTime();
   var countdownUpdate = setInterval(function() {
     var timeNow = new Date().getTime();
     var timeLeft = countDownDate - timeNow;
