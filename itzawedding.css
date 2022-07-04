@@ -46,6 +46,16 @@
     line-height: 22px;
 }
 
+.embassy-suites {
+    width: 50%;
+}
+
+.embassy-suites-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
 #rsvp-img {
     background-position: center !important;
     height: 45vh !important;
